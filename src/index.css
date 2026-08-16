@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand palette expressed as HSL for shadcn compatibility */
+    --background: 90 20% 96%;        /* pale sage-white */
+    --foreground: 150 12% 14%;       /* deep charcoal-green ink */
+
+    --card: 0 0% 100%;
+    --card-foreground: 150 12% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 12% 14%;
+
+    --primary: 180 55% 15%;          /* deep teal */
+    --primary-foreground: 90 20% 96%;
+
+    --secondary: 100 28% 32%;        /* earthy olive green */
+    --secondary-foreground: 90 20% 96%;
+
+    --accent: 38 62% 47%;            /* warm amber/gold */
+    --accent-foreground: 150 12% 14%;
+
+    --muted: 90 12% 91%;
+    --muted-foreground: 150 8% 38%;
+
+    --destructive: 4 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 150 10% 85%;
+    --input: 150 10% 85%;
+    --ring: 180 55% 15%;
+
+    --radius: 0.6rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+}
