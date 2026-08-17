@@ -1,6 +1,11 @@
 import { PageHeader } from "@/shared/components/PageHeader";
 import { PageContactCta } from "@/shared/components/PageContactCta";
-import { Card, CardHeader, CardTitle, CardDescription } from "@/shared/components/ui/card";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/shared/components/ui/card";
 
 const offerings = [
   {
@@ -27,6 +32,7 @@ export function Poultry() {
         eyebrow="Poultry"
         title="Poultry supply built on flock health and production discipline."
         description="AquaModernix's poultry business pairs consistent supply with the production expertise needed to keep flocks healthy and yields predictable."
+        image="/images/poultry-hero.jpg"
       />
 
       <section className="bg-background py-20">

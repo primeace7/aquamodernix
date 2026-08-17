@@ -32,6 +32,7 @@ export function Consulting() {
         eyebrow="Consulting"
         title="Expert guidance from a trained aquaculture professional."
         description="Working with an aquaculture consultant who holds formal engineering and MSc-level training means fewer costly guesses and a faster route to a stable, profitable operation."
+        image="/images/consulting-hero.jpg"
       />
 
       <section className="bg-background py-20">

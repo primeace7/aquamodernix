@@ -1,6 +1,11 @@
 import { PageHeader } from "@/shared/components/PageHeader";
 import { PageContactCta } from "@/shared/components/PageContactCta";
-import { Card, CardHeader, CardTitle, CardDescription } from "@/shared/components/ui/card";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/shared/components/ui/card";
 
 const offerings = [
   {
@@ -27,6 +32,7 @@ export function Aquaculture() {
         eyebrow="Aquaculture & Fisheries"
         title="Reliable fish supply, built on real production expertise."
         description="From hatchery to harvest, AquaModernix's aquaculture business combines quality-controlled supply with the technical know-how to keep production consistent."
+        image="/images/aquaculture-hero.jpg"
       />
 
       <section className="bg-background py-20">

@@ -42,7 +42,7 @@ export function CaseStudies() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="rounded-lg border border-border bg-card p-7"
+              className="rounded-lg border border-border bg-card p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
               <p className="font-display text-4xl font-semibold text-accent">
                 {item.metric}

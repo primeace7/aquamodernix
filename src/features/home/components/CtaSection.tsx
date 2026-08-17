@@ -16,10 +16,15 @@ export function CtaSection() {
           Ready to strengthen your operation?
         </motion.h2>
         <p className="mt-4 max-w-md text-background/80">
-          Book a consultation, request a supply quote, or explore a
-          partnership — our team responds within one business day.
+          Book a consultation, request a supply quote, or explore a partnership
+          — our team responds within one business day.
         </p>
-        <Button asChild size="lg" variant="accent" className="mt-8">
+        <Button
+          asChild
+          size="lg"
+          variant="accent"
+          className="mt-8 transition-transform duration-300 hover:scale-105"
+        >
           <Link to="/contact">Get in Touch</Link>
         </Button>
       </div>

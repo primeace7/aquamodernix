@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Sprout, Fish, Bird, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import {
   Card,
   CardHeader,
@@ -12,7 +12,7 @@ import {
 const services = [
   {
     to: "/consulting",
-    icon: Sprout,
+    image: "/images/consulting-card.jpg",
     title: "Consulting",
     description:
       "Strategic and technical guidance from an aquaculture professional with formal engineering and MSc-level training — applied to real Nigerian operating conditions.",
@@ -20,7 +20,7 @@ const services = [
   },
   {
     to: "/aquaculture",
-    icon: Fish,
+    image: "/images/aquaculture-card.jpg",
     title: "Aquaculture & Fisheries",
     description:
       "Fish and fisheries sales, supply, and partnership — built on hatchery-to-harvest expertise that protects yield and quality.",
@@ -28,7 +28,7 @@ const services = [
   },
   {
     to: "/poultry",
-    icon: Bird,
+    image: "/images/poultry-card.jpg",
     title: "Poultry",
     description:
       "Poultry supply and partnership grounded in flock health, biosecurity, and production practices that hold up at scale.",
@@ -59,11 +59,17 @@ export function ServicesOverview() {
               transition={{ duration: 0.65, ease: "easeOut" }}
             >
               <Link to={service.to} className="group block h-full">
-                <Card className="h-full transition-shadow hover:shadow-lg">
+                <Card className="h-full overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                  {/* Background image with muted overlay */}
+                  <div className="relative h-48">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="absolute inset-0 h-full w-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/70 to-primary/40" />
+                  </div>
                   <CardHeader>
-                    <div className="flex h-12 w-12 items-center justify-center rounded-md bg-primary/10 text-primary">
-                      <service.icon className="h-6 w-6" />
-                    </div>
                     <CardTitle className="mt-3">{service.title}</CardTitle>
                     <CardDescription>{service.description}</CardDescription>
                   </CardHeader>

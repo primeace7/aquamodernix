@@ -46,7 +46,7 @@ export function HookSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="rounded-lg border border-border bg-card p-6"
+              className="rounded-lg border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
               <p className="font-display text-lg font-semibold text-foreground">
                 {item.problem}

@@ -5,18 +5,16 @@ import { Button } from "@/shared/components/ui/button";
 export function Hero() {
   return (
     <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-primary text-background">
-      {/* Background video - replace /videos/hero-placeholder.mp4 with the
-          generated segment video once ready. Loops silently, muted for
-          autoplay compliance across browsers. */}
+      {/* Background video - loops silently, muted for autoplay compliance
+          across browsers. */}
       <video
         className="absolute inset-0 h-full w-full object-cover"
         autoPlay
         muted
         loop
         playsInline
-        poster="/videos/hero-poster.jpg"
       >
-        <source src="/videos/hero-placeholder.mp4" type="video/mp4" />
+        <source src="/videos/hero.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay for text legibility */}
@@ -48,9 +46,9 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mt-6 max-w-xl text-lg text-background/85"
         >
-          AquaModernix pairs hands-on farm and hatchery expertise with
-          rigorous consulting, so operators can produce more, waste less,
-          and grow with confidence.
+          AquaModernix pairs hands-on farm and hatchery expertise with rigorous
+          consulting, so operators can produce more, waste less, and grow with
+          confidence.
         </motion.p>
 
         <motion.div
@@ -62,7 +60,12 @@ export function Hero() {
           <Button asChild size="lg" variant="accent">
             <Link to="/contact">Book a Consultation</Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="border-background/40 text-background hover:bg-background/10">
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
+            className="border-background/40 text-background hover:bg-background/10"
+          >
             <Link to="/blog">Read the Blog</Link>
           </Button>
         </motion.div>
